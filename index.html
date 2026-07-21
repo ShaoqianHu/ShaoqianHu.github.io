@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Academic homepage of Shaoqian Hu, Associate Research Professor of Seismology at China University of Geosciences, Wuhan.">
+    <meta name="theme-color" content="#7a2e2e">
     <title>Shaoqian Hu (胡少乾) | Academic Homepage</title>
+    <link rel="preload" as="image" href="photo.webp" type="image/webp" fetchpriority="high">
+    <link rel="preload" as="image" href="photo.jpg" type="image/jpeg" fetchpriority="high">
+    <link rel="dns-prefetch" href="//doi.org">
+    <link rel="dns-prefetch" href="//scholar.google.com">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -49,7 +54,10 @@
                     </div>
                     <aside class="hero-side">
                         <div class="portrait-card">
-                            <img src="photo.png" alt="Portrait of Shaoqian Hu" class="profile-photo">
+                            <picture>
+                                <source srcset="photo.webp" type="image/webp">
+                                <img src="photo.jpg" alt="Portrait of Shaoqian Hu" class="profile-photo" width="600" height="799" fetchpriority="high">
+                            </picture>
                             <div class="portrait-meta">
                                 <p class="meta-label">Contact</p>
                                 <a href="mailto:hushaoqian@cug.edu.cn">hushaoqian@cug.edu.cn</a>
